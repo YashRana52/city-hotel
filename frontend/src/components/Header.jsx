@@ -36,7 +36,7 @@ function Header() {
                     <Link to='/about'>
                         <li className='hover:text-blue-600 transition'>About</li>
                     </Link>
-                    <Link to='/signin' className='flex items-center space-x-1'>
+                    <Link to='/sign-in' className='flex items-center space-x-1'>
                         <FaUserCircle className='text-2xl text-slate-600' />
                         <span className='hidden sm:inline'>Sign In</span>
                     </Link>
