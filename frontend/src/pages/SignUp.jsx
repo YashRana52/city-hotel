@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import QAuth from '../components/QAuth'
 
 function SignUp() {
     const [formData, setFormData] = useState({})
@@ -61,6 +62,7 @@ function SignUp() {
                 <button disabled={loading} className='bg-blue-600 text-white p-2 sm:p-3 rounded-lg font-medium uppercase hover:bg-blue-700 disabled:opacity-80 transition'>
                    {loading ? 'Loading...' : 'Sign Up'}
                 </button>
+                <QAuth/>
             </form>
             <div className='flex justify-center gap-1 mt-4 text-gray-700'>
                 <p>Already have an account?</p>

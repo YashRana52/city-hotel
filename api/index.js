@@ -1,4 +1,5 @@
 // api/index.js
+import cors from 'cors';
 import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
@@ -12,6 +13,7 @@ mongoose.connect(process.env.MONGO)
 
 const app = express();
 app.use(express.json())
+app.use(cors());
 
 // Middleware for routes
 app.use('/api/user', userRouter);

@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
+import QAuth from '../components/QAuth'
 import { signInFailure, signInStart, signInSuccess } from '../redux/user/userSlice'
 
 function Signin() {
@@ -64,6 +65,7 @@ function Signin() {
                     className='bg-blue-600 text-white p-2 sm:p-3 rounded-lg font-medium uppercase hover:bg-blue-700 disabled:opacity-80 transition'>
                    {loading ? 'Loading...' : 'Sign In'}
                 </button>
+                <QAuth/>
             </form>
             <div className='flex justify-center gap-1 mt-4 text-gray-700'>
                 <p>Don't have an account?</p>
